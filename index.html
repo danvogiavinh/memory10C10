@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Review lớp học qua 1 năm</title>
+    <link rel="icon" href="logo.png" tpye="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px;
+            padding: 50px;
+            background-image: url('nen.jpg');
+            /* Đường dẫn đến background độc đáo */
+            background-repeat: no-repeat;
+            /* Không lặp lại background */
+            background-size: cover;
+            /* Hiển thị ảnh background vừa với kích thước của container */
+            background-position: center;
+            /* Căn giữa ảnh background */
+            min-height: 100vh;
+            /* Đảm bảo container có chiều cao ít nhất bằng chiều cao của trình duyệt */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .media {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .media .description {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .media .image {
+            height: auto;
+            width: 15cm;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 5px;
+        }
+
+        .end-section {
+            /* CSS hiện tại của phần tử */
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .end-section:hover {
+            opacity: 0.7;
+            /* CSS khác khi hover */
+
+        }
+    </style>
+</head>
+
+<body>
+    <audio id="background-music" autoplay loop>
+        <source src="audio.mp4" type="audio/mpeg">
+        <!-- Trình duyệt không hỗ trợ HTML5 audio -->
+    </audio>
+    <script>var controller = new ScrollMagic.Controller();
+
+        var scene = new ScrollMagic.Scene({
+            triggerElement: ".end-section",
+            triggerHook: 1,
+            duration: "100%"
+
+        }).setTween(".end-section", {
+            opacity: 0, y: "100%", ease: "Power4.easeOut"
+        }).addTo(controller);
+    </script>;
+    <div class="container">
+        <h1>MỘT NĂM HỌC ĐÃ QUA ĐI, HÃY CÙNG TỚ NGỒI LẠI ĐỂ CÙNG NHÌN VỀ TẬP THỂ 10C10 NĂM QUA NHAA</h1>
+        <div class="media">
+            <div class="description">
+                Lễ khai giảng đầu tiên của cấp THPT
+            </div>
+            <img class="image" src="vannghe1.jpg" alt="Tháng 8">
+            <img class="image" src="vannghe2.jpg" alt="Tháng 8">
+            <img class="image" src="vannghe3.jpg" alt="Tháng 8">
+        </div>
+        <div class="media">
+            <div class="description">
+                Bắt đầu năm học mới với niềm hứng khởi và tươi trẻ.
+            </div>
+            <img class="image" src="khaigiang1.jpg" alt="Tháng 9">
+            <img class="image" src="khaigiang2.jpg" alt="Tháng 9">
+            <img class="image" src="khaigiang3.jpg" alt="Tháng 9">
+            <img class="image" src="khaigiang4.jpg" alt="Tháng 9">
+
+        </div>
+        <div class="media">
+            <div class="description">
+                Tết Trung Thu cùng lớp mới
+            </div>
+            <img class="image" src="tettrungthu1.jpg" alt="Tháng 10">
+            <img class="image" src="tettrungthu2.jpg" alt="Tháng 10">
+            <img class="image" src="tettrungthu3.jpg" alt="Tháng 10">
+            <img class="image" src="tettrungthu4.jpg" alt="Tháng 10">
+        </div>
+        <div class="media">
+            <div class="description">
+                Sinh nhật của các bạn tháng 7,8,9
+            </div>
+            <img class="image" src="sinhnhat5671.jpg" alt="Tháng 11">
+            <img class="image" src="sinhnhat5672.jpg" alt="Tháng 11">
+            <img class="image" src="sinhnhat5673.jpg" alt="Tháng 11">
+        </div>
+
+        <div class="media">
+            <div class="description">
+                Hội khỏe phù đổng
+            </div>
+
+
+            <img class="image" src="hoikhoephudong1.jpg" alt="Tháng 11">
+            <img class="image" src="hoikhoephudong4.jpg" alt="Tháng 11">
+
+        </div>
+
+        <div class="media">
+            <div class="description">
+                Các bạn nam tự tay tổ chức ngày 20/10
+            </div>
+            <img class="image" src="20-101.jpg" alt="Tháng 10">
+
+        </div>
+
+        <div class="media">
+            <div class="description">
+                Lễ kỷ niệm 60 năm thành lập trường
+            </div>
+            <img class="image" src="kyniem60nam5.jpg" alt="Tháng 11">
+            <img class="image" src="kyniem60nam3.jpg" alt="Tháng 11">
+            <img class="image" src="kyniem60nam4.jpg" alt="Tháng 11">
+        </div>
+
+        <div class="media">
+            <div class="description">
+                Hậu kỷ niệm 60 năm thành lập trường
+            </div>
+            <img class="image" src="kyniem60nam1.jpg" alt="Tháng 11"> ;
+        </div>
+
+        <div class="media">
+            <div class="description">
+                Chia tay bạn Ngọc Huyền
+            </div>
+            <img class="image" src="ctay3.jpg" alt="Tháng 12">
+            <img class="image" src="ctay2.jpg" alt="Tháng 12">
+        </div>
+
+        <div class="media">
+            <div class="description">
+                Sinh nhật của các bạn tháng 10,11,12
+            </div>
+            <img class="image" src="sinhnhat1011122(2)" alt="Tháng 11">
+        </div>
+
+
+        <div class="media">
+            <div class="description">
+                Liên hoan cuối năm 2022
+            </div>
+            <img class="image" src="lienhoan1.jpg" alt="Tháng 11">
+            <img class="image" src="lienhoan2.jpg" alt="Tháng 11">
+            <img class="image" src="lienhoan3.jpg" alt="Tháng 11">
+            <img class="image" src="lienhoan4.jpg" alt="Tháng 11">
+        </div>
+
+        <div class="media">
+            <div class="description">
+                Sinh nhật các bạn 1,2,3
+            </div>
+            <img class="image" src="sinhnhat1231.jpg" alt="Tháng 11">
+        </div>
+
+        <div class="media">
+            <div class="description">
+                Ngày 8/3
+            </div>
+            <img class="image" src="ngayphunu.jpg" alt="Tháng 11">
+        </div>
+
+        <div class="media">
+            <div class="description">
+                Sinh nhật cô Hạnh nhaa
+            </div>
+            <img class="image" src="sinhnhatco.jpg" alt="Tháng 11">
+        </div>
+
+        <div class="end-section">
+            MỘT NĂM HỌC CỨ NHƯ VẬY MÀ TRÔI QUA NHƯNG KỶ NIỆM SẼ LUÔN Ở LẠI
+
+
+            <a href="#top" class="special-link">Quay lại đầu trang</a>
+
+        </div>
+        <script>
+            // Tạo một âm thanh mới
+            var audio = document.getElementById('background-music');
+
+            // Bật âm thanh khi tải trang
+            window.addEventListener('load', function () {
+                audio.play();
+            });
+        </script>
+</body>
+
+</html>
